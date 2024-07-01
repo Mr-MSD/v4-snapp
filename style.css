@@ -1,0 +1,308 @@
+/* Var Color Base Define For All Elements */
+:root {
+  --green-color: #00d170;
+  --white-color: #fff;
+  --text-color: #4a4a4a;
+  --bg-color: #21aa58;
+  --gray-color: #f2f5f8;
+}
+
+/* Tarif Font Face */
+@font-face {
+  font-family: "IRANSansWeb";
+  src: url("assets/fonts/IRANSansWeb_Light.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+
+  /* baray waghti ke mororgar font ra load nakonad yek font jaygozin mororgar namayesh midahad */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansWebMedium";
+  src: url("assets/fonts/IRANSansWeb_Medium.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+
+  /* baray waghti ke mororgar font ra load nakonad yek font jaygozin mororgar namayesh midahad */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANSansWebBold";
+  src: url("assets/fonts/IRANSansWeb_Bold.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+
+  /* baray waghti ke mororgar font ra load nakonad yek font jaygozin mororgar namayesh midahad */
+  font-display: swap;
+}
+
+/* Moarefi Font Face Be Body */
+* {
+  font-family: "IRANSansWeb";
+  direction: rtl;
+}
+
+/* Baray Hazf Hashiyeha */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  background-color: var(--white-color);
+  color: var(--white-color);
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+i {
+  transition: transform 0.5s ease;
+}
+
+/* Baray Hazf Link Dephalt */
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  height: 96px;
+}
+
+.maincat {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.ulnav {
+  display: flex;
+  gap: 2rem;
+}
+
+.subcat {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3.45rem;
+  left: -5%;
+  background-color: var(--white-color);
+  width: 110%;
+  border-radius: 15px;
+}
+
+.subcat li {
+  padding: 0.75rem;
+}
+
+.maincat:hover .subcat {
+  display: flex;
+}
+
+/* Charkhesh Arrow */
+.html:hover .html-chevron,
+.maincat:hover .maincat-chevron {
+  transform: rotate(-180deg);
+}
+
+.BlogTitle,
+.OrgPanelTitle,
+.DriverTitle,
+.RegisterTitle {
+  display: flex;
+  margin: auto;
+  padding: 15px 0;
+}
+
+header {
+  width: auto;
+  height: 96px;
+}
+
+.subcat li a:hover {
+  color: var(--green-color);
+}
+
+.introimage {
+  width: 50%;
+  height: auto;
+}
+
+.mobile {
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--white-color);
+  background-color: transparent;
+  color: var(--white-color);
+  font-family: "IRANSansWeb";
+  /* Baray inke bad click border nandaze*/
+  outline: none;
+}
+
+.mobile:placeholder-shown {
+  /* Set Background dot For input */
+  padding-left: 25px;
+  background: url("assets/svg/dot.svg") no-repeat left;
+  background-size: 7px;
+}
+.mobile:focus-visible {
+  padding-left: 25px;
+  background: url("assets/svg/colse.svg") no-repeat left;
+  background-size: 22px;
+}
+
+.headmain {
+  background-color: var(--bg-color);
+  display: flex;
+}
+
+.headtitle,
+.ptitle {
+  color: var(--white-color);
+  padding: 20px;
+}
+
+.introtext {
+  padding: 20px;
+  margin-right: 100px;
+}
+
+.loginwebbtn,
+.formcategory,
+.linkbtn,
+.loginwebbtn {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.linkbtn {
+  border: none;
+  color: var(--bg-color);
+  background-color: var(--white-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.linkbtn:hover {
+  cursor: pointer;
+}
+
+.loginwebbtn {
+  border: solid;
+  border-width: 1px;
+  border-color: var(--white-color);
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  padding: 5px 20px;
+  font-size: 1em;
+}
+
+.loginwebbtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input::-webkit-input-placeholder {
+  color: var(--white-color);
+}
+input:-moz-placeholder {
+  color: var(--white-color);
+}
+
+.icons {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 60px 10px;
+}
+
+.icoapple,
+.icowebapp,
+.icomyket,
+.icobazar,
+.icoandroid {
+  width: 210px;
+  height: auto;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  padding: 12px;
+  background-color: var(--white-color);
+  border-radius: 15px;
+}
+
+.squreicon {
+  width: 62px;
+  height: 62px;
+  /* padding: 5px; */
+}
+
+.itemdes,
+.titleitem {
+  /* padding: 5px; */
+  color: var(--text-color);
+}
+
+.itemdes {
+  opacity: 0.7;
+}
+
+.titleitem {
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  gap: 30px;
+  /* box-sizing: border-box; */
+  padding: 5px;
+  margin: auto;
+  justify-content: center;
+  background-color: var(--gray-color);
+}
+
+.grid-item {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.gridtitle {
+  font-family: "IRANSansWebBold";
+  text-align: center;
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: var(--gray-color);
+  padding: 15px;
+}
